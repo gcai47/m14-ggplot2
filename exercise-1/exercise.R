@@ -70,7 +70,7 @@ ggplot(data = diamonds.sample) + geom_histogram(aes(x = depth, fill = clarity))
 # Draw a plot of the `diamonds.sample` data (price by carat), with both points for each
 # diamond AND smoothed lines for each cut (hint: in a separate color)
 # Making the points have some `alpha` transparency will make the plot look nicer
-ggplot(data = diamonds.sample) + geom_point(mapping = aes(x = carat, y = price), color = "blue") + geom_smooth(mapping = aes(x = carat, y = price), color = "red")
+ggplot(data = diamonds.sample) + geom_point(mapping = aes(x = carat, y = price), color = "blue", alpha = 0.1) + geom_smooth(mapping = aes(x = carat, y = price), color = "red")
 
 # multiple geoms (point & smooth)
 
